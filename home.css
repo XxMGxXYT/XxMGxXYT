@@ -1,0 +1,672 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(./Test.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a:hover{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #2E38A4;
+}
+
+.container{
+    width: 700px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .textOne , .textTwo , .textThree{
+    color: #016262;
+}
+
+.container hr{
+    width: 100%;
+    height: 10px;
+    background-color: #016262;
+    border-radius: 10px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container > span{
+    font-size: 50px;
+    font-weight: bold;
+    width: 50%;
+    color: turquoise;
+}
+
+.ul2{
+    display: contents;
+    list-style: none;
+}
+
+.ul2 a{
+    color: white;
+}
+.ul1 a{
+    color: white;
+}
+
+a:hover{
+    color: red;
+}
+
+.listImg img{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.listImg2 img{
+    width: 50px;
+    height: 50px;
+}
+
+.hello .container img{
+    width: 400px;
+    height: 400px;
+}
+
+.hello{
+    display: flex;
+    margin-top: 70px;
+}
+
+.hello .container{
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.hello .container .personImage{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.hello .container p{
+    font-size: 20px;
+}
+
+.hello .container h1{
+    color: #2E38A4;
+    border-radius: 5px;
+    background-image: linear-gradient(to right , rgb(100, 85, 197) , pink , rgb(150, 85, 197) , cyan);
+    background-size: 400%;
+    animation-name: colorChange2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 11s;
+}
+
+@keyframes colorChange2 {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.aboutMe{
+    height: 600px;
+    margin-top: 20%;
+}
+
+.aboutMe .container img{
+    width: 350px;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.aboutMe .container{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aboutMe .textInfo{
+    height: 90%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 5px;
+    align-items: center;
+    background-size: 400%;
+    animation-name: colorChange;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-image: linear-gradient(to right , rgb(100, 85, 197) , rgb(150, 85, 197) , rgb(200, 85, 197) , rgb(250, 85, 197));
+    animation-duration: 20s;
+    overflow: auto;
+}
+@keyframes colorChange {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.aboutMe .container p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.alldivs .divs{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #2D293D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    font-weight: bold;
+    overflow: auto;
+    color: white;
+}
+
+.skils{
+    display: flex;
+    flex-direction: column;
+    height: 835px;
+    margin-top: 20%;
+}
+
+.skils .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.skils .divs{
+    height: 280px;
+    width: calc(100% / 4);
+}
+.skils .alldivs h1{
+    font-size: 20px;
+}
+
+.skils .container img{
+    width: 100px;
+    height: 100px;
+}
+
+.skils .container .alldivs{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+}
+
+.projects .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.projects .container img{
+    width: 100%;
+    height: 130px;
+}
+
+.projects .container .alldivs{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.projects .divs{
+    width: 300px;
+    height: 350px;
+}
+
+.freelancerIn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+}
+
+.freelancerIn .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.freelancerIn .container .alldivs{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.freelancerIn .divs{
+    width: 300px;
+    height: 350px;
+}
+
+.freelancerIn .container img{
+    width: 90px;
+    height: 90px;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.none{
+    display: none;
+}
+
+.footer{
+    width: 100%;
+    background-color: #2E38A4;
+    margin-top: 18%;
+}
+.footer .container span{
+    font-size: 50px;
+    font-weight: bold;
+    width: 50%;
+    color: turquoise;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.links{
+    display: contents;
+    list-style: none;
+    width: 50%;
+}
+
+.links img{
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.links img:hover{
+    transform: scale(1.5);
+}
+
+/* Small */
+
+@media (max-width: 440px){
+    .container{
+        width: 350px;
+    }
+    .header .container > span{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .listImg img{
+        display: inline-block;
+    }
+    .ul1{
+        width: 100px;
+        height: 150px;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-top: auto;
+        background-color: rgba(153, 50, 204, 0.562);
+        border-radius: 10px;
+        padding: 0;
+    }
+    .ul1 li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(90% / 4);
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: darkorchid;
+    }
+    .none{
+        display: none;
+    }
+    .ul2{
+        display: none;
+    }
+    .hello .container{
+        margin-top: 130px;
+    }
+    .hello .container img {
+        width: 330px;
+        height: 330px;
+    }
+    .aboutMe{
+        margin-top: 40%;
+        height: 725px;
+    }
+    .aboutMe .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutMe .container img{
+        width: 330px;
+    }
+    .aboutMe .textInfo h1{
+        font-size: 20px;
+    }
+    .aboutMe .container p {
+        font-size: 16px;
+    }
+    .skils{
+        margin-top: 50%;
+    }
+    .skils .container img{
+        height: 70px;
+        margin-top: 10px;
+        width: 70px;
+    }
+    .skils .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .skils .divs{
+        height: 175px;
+        width: calc(139% / 3);
+    }
+    .skils .alldivs h1{
+        font-size: 16px;
+    }
+    .projects .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .projects .divs{
+        height: 250px;
+        width: 185px;
+    }
+    .projects .alldivs h1{
+        font-size: 20px;
+    }
+    .freelancerIn .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .freelancerIn .divs{
+        height: 200px;
+        width: 185px;
+    }
+    .freelancerIn .alldivs h1{
+        font-size: 20px;
+    }
+    .footer .container .links img{
+        width: 30px;
+        height: 30px;
+    }
+    .footer .container .links{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer .container > span{
+        width: 40%;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 440px) and (max-width: 767px){
+    .container{
+        width: 459px;
+    }
+    .listImg img{
+        display: inline-block;
+    }
+    .ul1{
+        width: 100px;
+        height: 150px;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-top: auto;
+        background-color: rgba(153, 50, 204, 0.562);
+        border-radius: 10px;
+        padding: 0;
+    }
+    .ul1 li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(90% / 4);
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: darkorchid;
+    }
+    .none{
+        display: none;
+    }
+    .ul2{
+        display: none;
+    }
+    .header .container > span{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .hello .container{
+        margin-top: 100px;
+    }
+    .hello .container img {
+        width: 330px;
+        height: 330px;
+    }
+    .aboutMe .container p{
+        font-size: 17px;
+    }
+    .aboutMe{
+        margin-top: 20%;
+        height: 725px;
+    }
+    .aboutMe .container{
+        justify-content: center;
+    }
+    .aboutMe .container img{
+        width: 330px;
+    }
+    .skils{
+        margin-top: 40%;
+    }
+    .skils .container img{
+        height: 80px;
+        margin-top: 10px;
+        width: 80px;
+    }
+    .skils .divs{
+        height: 225px;
+        width: calc(139% / 3);
+    }
+    .skils .alldivs h1{
+        font-size: 20px;
+    }
+    .projects .divs{
+        height: 250px;
+        width: 185px;
+    }
+    .projects .alldivs h1{
+        font-size: 20px;
+    }
+    .projects .container .textTwo{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .freelancerIn .divs{
+        height: 250px;
+        width: 185px;
+    }
+    .freelancerIn .alldivs h1{
+        font-size: 20px;
+    }
+    .freelancerIn .container .textThree{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .footer .container .links{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer .container > span{
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px){
+    .container{
+        width: 730px;
+    }
+    .header .container > span{
+        font-size: 40px;
+    }
+    .aboutMe .container p{
+        font-size: 20px;
+    }
+    .aboutMe{
+        height: 500px;
+        margin-top: 40%;
+    }
+    .skils{
+        margin-top: 30%;
+    }
+    .skils .container img{
+        height: 90px;
+        margin-top: 10px;
+        width: 90px;
+    }
+    .skils .divs{
+        height: 225px;
+        width: calc(100% / 4);
+    }
+    .skils .alldivs h1{
+        font-size: 18px;
+    }
+    .projects{
+        margin-top: 10%;
+    }
+    .projects .divs{
+        width: 200px;
+        height: 300px;
+    }
+    .projects .divs h1{
+        font-size: 23px;
+    }
+    .projects .container .textTwo{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .freelancerIn{
+        margin-top: 10%;
+    }
+    .freelancerIn .divs{
+        height: 300px;
+        width: 200px;
+    }
+    .freelancerIn .divs h1{
+        font-size: 23px;
+    }
+    .freelancerIn .container .textThree{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .footer .container > span{
+        font-size: 40px;
+    }
+}
+/* mediam */
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .container{
+        width: 970px;
+    }
+    .aboutMe{
+        margin-top: 40%;
+    }
+    .aboutMe .container{
+        width: 900px;
+    }
+    .projects .divs{
+        width: 270px;
+    }
+    .freelancerIn .divs{
+        width: 270px;
+    }
+}
+
+/* large */
+
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+} 
+
